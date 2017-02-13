@@ -14,7 +14,7 @@ fi
 
 GLIDE_OS_ARCH=`go env GOHOSTOS`-`go env GOHOSTARCH`
 
-curl -s https://github.com/Masterminds/glide/releases/download/${VERSION}/glide-${VERSION}-${GLIDE_OS_ARCH}.tar.gz > /tmp/glide.tar.gz
+curl -L -s https://github.com/Masterminds/glide/releases/download/${VERSION}/glide-${VERSION}-${GLIDE_OS_ARCH}.tar.gz > /tmp/glide.tar.gz
 mkdir /tmp/glide
 tar --directory=/tmp/glide -xvf /tmp/glide.tar.gz
 cp /tmp/glide/${GLIDE_OS_ARCH}/glide $HOME/bin
