@@ -1,5 +1,7 @@
 # Travis Scripts
 
+[![Build Status](https://img.shields.io/travis/sagikazarmark/traviscripts.svg?style=flat-square)](https://travis-ci.org/sagikazarmark/traviscripts)
+
 **Useful scripts for Travis builds.**
 
 

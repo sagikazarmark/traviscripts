@@ -10,8 +10,5 @@ env:
         - SCRIPT="sudo scripts/docker-compose.sh" TEST="sudo tests/docker-compose/latest.sh"
         - SCRIPT="sudo scripts/docker-compose.sh 1.10.0" TEST="sudo tests/docker-compose/version.sh 1.10.0"
 
-install:
-    - $SCRIPT
-
-script:
-    - $TEST
+install: $SCRIPT
+script: $TEST
