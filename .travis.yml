@@ -1,0 +1,17 @@
+language: generic
+
+sudo: required
+
+services:
+    - docker
+
+env:
+    matrix:
+        - SCRIPT="sudo scripts/docker-compose.sh" TEST="sudo tests/docker-compose/latest.sh"
+        - SCRIPT="sudo scripts/docker-compose.sh 1.10.0" TEST="sudo tests/docker-compose/version.sh 1.10.0"
+
+install:
+    - $SCRIPT
+
+script:
+    - $TEST
